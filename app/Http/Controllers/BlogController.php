@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Post;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -11,6 +11,8 @@ class BlogController extends Controller
 {
     public function index()
     {
+        /*
+        # Populando o post com array
         $posts = [
         	0 => [
         		'titulo' => 'Quarto Post',
@@ -39,7 +41,9 @@ class BlogController extends Controller
         		'postado' => 'Marco',
         		'data' => '12/04/2015'
         	]
-        ];
+        ];*/
+        
+        $posts = \App\Post::all();
         return view('home', compact('posts'));
     }
 
