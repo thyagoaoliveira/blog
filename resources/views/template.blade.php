@@ -37,6 +37,9 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
+                        <a href="/admin">Admin</a>
+                    </li>
+                    <li>
                         <a href="/sobre">Sobre</a>
                     </li>
                     <li>
